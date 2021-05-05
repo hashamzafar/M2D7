@@ -51,9 +51,11 @@
                 color:purple;
             }
             /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
-
+           
             /* EX10) Write a selector to target the footer */
-       
+            main ~*{
+                background-color: rebeccapurple;
+            }
     </style>
     <meta charset="utf-8" />
     <meta
@@ -156,7 +158,7 @@
         </nav>
       </div>
 
-      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="jumbotron p-4 p-md-5 text-white rounded ">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">
             Title of a longer featured blog post
@@ -485,8 +487,8 @@
             main.style.backgroundColor = "pink"
         }
         // EX13) Write a function to change the background of the jumbotron
-        const colorJumbotron = function(){
-            const jumbotron = document.getElementsByClassName('jumbotron')
+       window.onload = function(){
+            const jumbotron = document.querySelector('.jumbotron')
             jumbotron.style.backgroundColor= "green" 
         }
         // EX14) Write a function to remove all the links under "Elsewhere"
@@ -499,7 +501,7 @@
         // EX15) Write a function to change the column size for post headings
         window.onload = function(){
             const heading = document.getElementsByClassName('blog-post-title')
-            heading.style.fontSize = '200%'
+            heading.style.font-size = '200%'
         }
         // EX16) Write a function to remove the "Search" magnifying glass icon
         // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
